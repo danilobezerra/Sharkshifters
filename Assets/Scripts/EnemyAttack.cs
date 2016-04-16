@@ -57,7 +57,8 @@ public class EnemyAttack : MonoBehaviour {
 			Debug.Log("Player Hit!!");
 			
 			projectile.Discard();
-			// TODO: Kill cyborg shark
+			// TODO: Decrease player health
+			GameManager.instance.health -= Random.Range(0.05f ,0.1f);
 		}
 	}
 	

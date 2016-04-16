@@ -35,12 +35,14 @@ public class ShipAttack : MonoBehaviour {
 			
 			projectile.Discard();
 			// TODO: Kill cyborg shark
+			GameManager.instance.score += 50;
 			Destroy(other.gameObject);
 		} else if (other.CompareTag("NotEnemy")) {
 			Debug.Log("Attacked a teammate!!");
 			
 			projectile.Discard();
 			// TOOD: Kill seagull
+			GameManager.instance.score -= 100;
 			Destroy(other.gameObject);
 		}
 	}

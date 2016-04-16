@@ -157,6 +157,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7951e44f63e0443f489c8f39c3985f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 159948, guid: ac49e9476333345568d11429a3d75280, type: 2}
+  startingPoint: {fileID: 410488}
+  projectileVelocity: 7.5
+  shootingSound: {fileID: 8300000, guid: befc4a914e8454c4a9e9a9972d207a21, type: 3}
+  coolDown: 3
 --- !u!212 &21294370
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -205,6 +210,26 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: _velocity
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 159948, guid: ac49e9476333345568d11429a3d75280, type: 2}
+    - target: {fileID: 0}
+      propertyPath: startingPoint
+      value: 
+      objectReference: {fileID: 410488}
+    - target: {fileID: 0}
+      propertyPath: projectileVelocity
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: shootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: befc4a914e8454c4a9e9a9972d207a21, type: 3}
+    - target: {fileID: 0}
+      propertyPath: coolDown
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
