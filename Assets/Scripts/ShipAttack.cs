@@ -29,11 +29,19 @@ public class ShipAttack : MonoBehaviour {
 		transform.Translate(Vector2.up * Time.deltaTime * projectileVelocity);
 	}
 	
-	private void HitEnemyAction(GameObject other) {
+	private void HitEnemyAction(ProjectileController projectile, GameObject other) {
 		if (other.CompareTag("Enemy")) {
 			Debug.Log("Enemy down!!");
+			
+			projectile.Discard();
+			// TODO: Kill cyborg shark
+			Destroy(other.gameObject);
 		} else if (other.CompareTag("NotEnemy")) {
 			Debug.Log("Attacked a teammate!!");
+			
+			projectile.Discard();
+			// TOOD: Kill seagull
+			Destroy(other.gameObject);
 		}
 	}
 }
