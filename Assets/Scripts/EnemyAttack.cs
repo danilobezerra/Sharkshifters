@@ -13,10 +13,16 @@ public class EnemyAttack : MonoBehaviour {
 	
 	[SerializeField] private AudioClip shootingSound;
 	
-	[Range(1.5f, 3f)] [SerializeField] private float coolDown;
+	private float _coolDown;
+	public float coolDown {
+		get { return _coolDown; }
+		set { 
+			_coolDown = value;
+			ResetCounter();
+		}
+	}
 	
 	private float counter;
-	
 	
 	private void Start() {
 		this.OnShoot += HandleAttack;
@@ -63,6 +69,6 @@ public class EnemyAttack : MonoBehaviour {
 	}
 	
 	private void ResetCounter() {
-		counter = Time.time + Random.Range(0, coolDown);
+		counter = Time.time + Random.Range(0, _coolDown);
 	}
 }

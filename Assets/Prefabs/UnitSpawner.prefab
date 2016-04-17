@@ -43,7 +43,8 @@ MonoBehaviour:
   - {fileID: 168168, guid: 3676c996260ad46698c226bad25b4419, type: 2}
   - {fileID: 122204, guid: 5ee4933ed83b74951bed1f91948b0cb8, type: 2}
   - {fileID: 168168, guid: 3676c996260ad46698c226bad25b4419, type: 2}
-  coolDown: 1.5
+  spawnCoolDown: 1.5
+  enemyCoolDown: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
