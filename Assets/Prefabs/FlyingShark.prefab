@@ -161,7 +161,6 @@ MonoBehaviour:
   startingPoint: {fileID: 410488}
   projectileVelocity: 7.5
   shootingSound: {fileID: 8300000, guid: befc4a914e8454c4a9e9a9972d207a21, type: 3}
-  coolDown: 3
 --- !u!212 &21294370
 SpriteRenderer:
   m_ObjectHideFlags: 1
