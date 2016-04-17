@@ -157,6 +157,7 @@ GameObject:
   - 114: {fileID: 11436316}
   - 114: {fileID: 11488144}
   - 212: {fileID: 21291196}
+  - 95: {fileID: 9554704}
   m_Layer: 0
   m_Name: FlyingShark
   m_TagString: Enemy
@@ -537,6 +538,23 @@ PolygonCollider2D:
       - {x: -0.7565086, y: -0.012654185}
       - {x: -1.0118215, y: 0.18068375}
       - {x: -1.0206897, y: 0.27420044}
+--- !u!95 &9554704
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168168}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d662aea9cc1424e0c92401d95ca5efa3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11436316
 MonoBehaviour:
   m_ObjectHideFlags: 1
