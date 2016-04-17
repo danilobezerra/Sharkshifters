@@ -2,11 +2,8 @@
 
 public class ShipAttack : MonoBehaviour {	
 	[SerializeField] private GameObject projectilePrefab;
-
 	[SerializeField] private Transform startingPoint;
-	
 	[SerializeField] private float projectileVelocity;
-	
 	[SerializeField] private AudioClip shootingSound;
 	
 	public void HandleAttack() {
@@ -31,15 +28,11 @@ public class ShipAttack : MonoBehaviour {
 	
 	private void HitEnemyAction(ProjectileController projectile, GameObject other) {
 		if (other.CompareTag("Enemy")) {
-			Debug.Log("Enemy down!!");
-			
 			projectile.Discard();
 			// TODO: Kill cyborg shark
 			GameManager.instance.score += 50;
 			Destroy(other.gameObject);
 		} else if (other.CompareTag("NotEnemy")) {
-			Debug.Log("Attacked a teammate!!");
-			
 			projectile.Discard();
 			// TOOD: Kill seagull
 			GameManager.instance.score -= 100;
