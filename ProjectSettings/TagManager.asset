@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - NotEnemy
   - Projectile
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -43,4 +44,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2080220079
+    locked: 0
+  - name: FlyingShark
+    uniqueID: 1723768455
+    locked: 0
+  - name: Seagull
+    uniqueID: 4061591371
+    locked: 0
+  - name: Ship
+    uniqueID: 2814213665
+    locked: 0
+  - name: Foreground
+    uniqueID: 3419854181
     locked: 0

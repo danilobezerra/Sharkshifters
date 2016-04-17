@@ -28,7 +28,7 @@ public class UnitMovement : MonoBehaviour {
 	
 	private void OnBecameInvisible() {
 		if (this.CompareTag("Enemy")) {
-			GameManager.instance.score -= 25;
+			GameManager.instance.score -= 10;
 		}
 		
 		Destroy(gameObject);

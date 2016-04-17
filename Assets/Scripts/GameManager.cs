@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 	
-	private enum GameState { Playing, HighScore, GameOver }
-	private GameState state = GameState.Playing;
+	public enum GameState { Playing, HighScore, GameOver }
+	private GameState _state = GameState.Playing;
+	public GameState gameState {
+		get { return _state; }
+		set { _state = value; }
+	}
 	
 	[SerializeField] private Text scoreText;
 	[SerializeField] private Text healthText;
@@ -14,11 +18,11 @@ public class GameManager : MonoBehaviour {
 	[SerializeField] private string gameOverSceneName;
 	[SerializeField] private string mainMenuSceneName;
 	
-	private int _score = 100;
+	private int _score = 150;
 	public int score {
 		get { return _score; }
-		set { 
-			scoreText.text = string.Format("Score: {0:00000}", value);
+		set {
+			if (value > 0) scoreText.text = string.Format("Score: {0:00000}", value);
 			_score = value;
 		}
 	}
@@ -27,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	public float health {
 		get { return _health; }
 		set {
-			healthText.text = string.Format("Health: {0:000}%", value * 100);
+			if (value > 0) healthText.text = string.Format("Health: {0:000}%", value * 100);
 			_health = value;
 		}
 	}
@@ -41,17 +45,20 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	private void Update() {
-		switch (state) {
+		switch (_state) {
 			case GameState.Playing:
 				if (_health <= 0 | _score <= 0) {
 					SceneManager.LoadScene(gameOverSceneName);
-					state = GameState.HighScore;
+					_state = GameState.HighScore;
 				}
 				
 				break;
 			case GameState.HighScore:
-				// TODO: Show Score
-				state = GameState.GameOver;
+				GameObject ui = GameObject.FindWithTag("UI");
+				var actions = ui.GetComponent<GameOverActions>();
+				actions.scoreText = string.Format("{0:00000}", _score > 0 ? _score : 0);
+				
+				//_state = GameState.GameOver;
 				break;
 			case GameState.GameOver:
 				if (Input.anyKeyDown) {
