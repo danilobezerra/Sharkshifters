@@ -10,6 +10,12 @@ public class UnitMovement : MonoBehaviour {
 		set { _velocity = value; }
 	}
 	
+	private Collider2D hitBox;
+	
+	private void Awake() {
+		hitBox = GetComponent<Collider2D>();
+	}
+	
 	private void Start() {
 		this.OnMove += HandleMovement;
 	}
@@ -30,5 +36,16 @@ public class UnitMovement : MonoBehaviour {
 	
 	private void HandleMovement() {
 		transform.Translate(Vector2.left * Time.deltaTime * _velocity);	
+	}
+	
+	private void HandleEnemyDeath() {
+		transform.Translate(Vector2.down * Time.deltaTime * (_velocity * 2));	
+	}
+	
+	public void ChangeMovement() {
+		this.OnMove = null;
+		hitBox.enabled = false;
+		
+		this.OnMove += HandleEnemyDeath;
 	}
 }

@@ -60,11 +60,9 @@ public class EnemyAttack : MonoBehaviour {
 	
 	private void HitPlayerAction(ProjectileController projectile, GameObject other) {
 		if (other.CompareTag("Player")) {
-			Debug.Log("Player Hit!!");
-			
 			projectile.Discard();
 			// TODO: Decrease player health
-			GameManager.instance.health -= Random.Range(0.05f ,0.1f);
+			GameManager.instance.health -= Random.Range(0.05f, 0.1f);
 		}
 	}
 	

@@ -31,7 +31,9 @@ public class ShipAttack : MonoBehaviour {
 			projectile.Discard();
 			// TODO: Kill cyborg shark
 			GameManager.instance.score += 50;
-			Destroy(other.gameObject);
+			//Destroy(other.gameObject);
+			var movement = other.GetComponent<UnitMovement>();
+			movement.ChangeMovement();
 		} else if (other.CompareTag("NotEnemy")) {
 			projectile.Discard();
 			// TOOD: Kill seagull
