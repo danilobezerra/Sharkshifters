@@ -3,11 +3,16 @@
 public class ShipMovement : MonoBehaviour {
 	[SerializeField] private float velocity;
 	
+	private Collider2D hitBox;
 	private float xMin, xMax;
+	
+	private void Awake() {
+		hitBox = GetComponent<Collider2D>();
+	}
 	
 	private void Start() {
 		float screenWidth = Camera.main.orthographicSize * Screen.width / Screen.height;
-		float halfSpriteWidth = GetComponent<SpriteRenderer>().bounds.size.x / 2;	
+		float halfSpriteWidth = hitBox.bounds.size.x / 2;	
 		
 		xMin = halfSpriteWidth - screenWidth;
 		xMax = screenWidth - halfSpriteWidth;
