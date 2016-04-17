@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: dbc075ea18879423f953531cbaf5ce32
+timeCreated: 1460909503
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Seagull_0
+    21300002: Seagull_1
+    21300004: Seagull_2
+    21300006: Seagull_3
+    21300008: Seagull_4
+    21300010: Seagull_5
+    21300012: Seagull_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Seagull_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 164
+        width: 83
+        height: 73
+      alignment: 9
+      pivot: {x: 0.9625185, y: 0.9006682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.889038, y: 7.2512207}
+        - {x: -36.889038, y: -2.7487793}
+        - {x: -79.88904, y: -54.74878}
+        - {x: -79.88904, y: -62.74878}
+        - {x: -72.88904, y: -65.74878}
+        - {x: -20.889038, y: -65.74878}
+        - {x: 3.110962, y: -17.74878}
+        - {x: 3.110962, y: 7.2512207}
+    - name: Seagull_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 230
+        width: 17
+        height: 18
+      alignment: 9
+      pivot: {x: 0.69355863, y: 0.6828045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Seagull_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 236
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Seagull_3
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 161
+        width: 70
+        height: 86
+      alignment: 9
+      pivot: {x: 0.10827528, y: 0.045113143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49.42073, y: 82.12027}
+        - {x: -7.5792694, y: 34.12027}
+        - {x: -7.5792694, y: -3.8797302}
+        - {x: 15.420731, y: -3.8797302}
+        - {x: 52.42073, y: 10.12027}
+        - {x: 62.42073, y: 43.12027}
+        - {x: 62.42073, y: 79.12027}
+        - {x: 59.42073, y: 82.12027}
+    - name: Seagull_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 191
+        width: 39
+        height: 33
+      alignment: 9
+      pivot: {x: 0.16251431, y: 0.832372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.661942, y: 5.531723}
+        - {x: -4.3380585, y: 5.531723}
+        - {x: -6.3380585, y: 4.531723}
+        - {x: -6.3380585, y: -3.468277}
+        - {x: 3.6619415, y: -25.468277}
+        - {x: 8.661942, y: -27.468277}
+        - {x: 25.661942, y: -27.468277}
+        - {x: 32.66194, y: -24.468277}
+        - {x: 32.66194, y: -9.468277}
+        - {x: 22.661942, y: 4.531723}
+    - name: Seagull_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 20
+        width: 103
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.5, y: 64.5}
+        - {x: -51.5, y: -64.5}
+        - {x: 51.5, y: -64.5}
+        - {x: 51.5, y: 64.5}
+    - name: Seagull_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 22
+        width: 125
+        height: 126
+      alignment: 9
+      pivot: {x: 0.4151786, y: 0.49709818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51.897324, y: 63.36563}
+        - {x: -51.897324, y: -0.6343689}
+        - {x: 6.1026764, y: -62.63437}
+        - {x: 73.10268, y: -62.63437}
+        - {x: 73.10268, y: -51.63437}
+        - {x: -22.897324, y: 63.36563}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

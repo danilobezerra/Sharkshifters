@@ -15,4 +15,8 @@ public class GameOverActions : MonoBehaviour {
 	private void Update() {
 	
 	}
+	
+	public void SetGameOverState() {
+		GameManager.instance.gameState = GameManager.GameState.GameOver;
+	}
 }
