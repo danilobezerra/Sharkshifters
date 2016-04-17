@@ -9,8 +9,10 @@ public class ProjectileController : MonoBehaviour {
 	public event ShootAction OnShoot;
 	public event HitAction OnHitOther;
 	
+	private bool visible;
+	
 	private void Update() {
-		if (OnShoot != null) {
+		if (OnShoot != null && visible) {
 			OnShoot(transform);
 		}
 	}
@@ -22,8 +24,13 @@ public class ProjectileController : MonoBehaviour {
 	}
 	
 	private void OnBecameInvisible() {
+		visible = false;
 		Destroy(gameObject);
 	}
+	
+	private void OnBecameVisible() {
+        visible = true;
+    }
 	
 	public void Discard() {
 		AudioSource.PlayClipAtPoint(hitSound, transform.position);
