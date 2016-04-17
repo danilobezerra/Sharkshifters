@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 	
-	private enum GameState { Playing, GameOver, HighScore }
+	private enum GameState { Playing, HighScore, GameOver }
 	private GameState state = GameState.Playing;
-	
 	
 	[SerializeField] private Text scoreText;
 	[SerializeField] private Text healthText;
+	
+	[SerializeField] private string gameOverSceneName;
+	[SerializeField] private string mainMenuSceneName;
 	
 	private int _score = 100;
 	public int score {
@@ -40,11 +43,22 @@ public class GameManager : MonoBehaviour {
 	private void Update() {
 		switch (state) {
 			case GameState.Playing:
-				if (_health <= 0 | _score <= 0) state = GameState.GameOver;
-				break;
-			case GameState.GameOver:
+				if (_health <= 0 | _score <= 0) {
+					SceneManager.LoadScene(gameOverSceneName);
+					state = GameState.HighScore;
+				}
+				
 				break;
 			case GameState.HighScore:
+				// TODO: Show Score
+				state = GameState.GameOver;
+				break;
+			case GameState.GameOver:
+				if (Input.anyKeyDown) {
+					SceneManager.LoadScene(mainMenuSceneName);
+					Destroy(gameObject);
+				}
+				
 				break;
 		}
 	}
