@@ -47,5 +47,9 @@ public class UnitMovement : MonoBehaviour {
 		hitBox.enabled = false;
 		
 		this.OnMove += HandleEnemyDeath;
+		if (this.CompareTag("Enemy")) {
+			var attack = GetComponent<EnemyAttack>();
+			attack.enabled = false;
+		}
 	}
 }

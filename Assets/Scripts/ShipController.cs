@@ -18,7 +18,7 @@ public class ShipController : MonoBehaviour {
 		this.OnAttack += attack.HandleAttack;
 	}
 	
-	private void Update () {
+	private void Update() {
 		if (OnMove != null) {
 			OnMove(Input.GetAxis(horizontalAxisName));
 		}
