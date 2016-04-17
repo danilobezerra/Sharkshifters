@@ -32,6 +32,9 @@ public class ShipAttack : MonoBehaviour {
 			// TODO: Kill cyborg shark
 			GameManager.instance.score += 50;
 			//Destroy(other.gameObject);
+			var attack = other.GetComponent<EnemyAttack>();
+			attack.BreakArmor();
+			
 			var movement = other.GetComponent<UnitMovement>();
 			movement.ChangeMovement();
 		} else if (other.CompareTag("NotEnemy")) {

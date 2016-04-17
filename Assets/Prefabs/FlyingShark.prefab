@@ -18,7 +18,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &110312
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -34,7 +34,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &116110
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -214,7 +214,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &189116
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -297,8 +297,8 @@ Transform:
   m_LocalPosition: {x: -0.494, y: -0.077, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 434638}
-  m_RootOrder: 3
+  m_Father: {fileID: 461346}
+  m_RootOrder: 1
 --- !u!4 &410488
 Transform:
   m_ObjectHideFlags: 1
@@ -321,8 +321,8 @@ Transform:
   m_LocalPosition: {x: -0.48, y: 0.205, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 434638}
-  m_RootOrder: 4
+  m_Father: {fileID: 461346}
+  m_RootOrder: 0
 --- !u!4 &423654
 Transform:
   m_ObjectHideFlags: 1
@@ -333,7 +333,7 @@ Transform:
   m_LocalPosition: {x: -0.25, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 434638}
+  m_Father: {fileID: 461346}
   m_RootOrder: 2
 --- !u!4 &427164
 Transform:
@@ -371,9 +371,6 @@ Transform:
   m_Children:
   - {fileID: 410488}
   - {fileID: 461346}
-  - {fileID: 423654}
-  - {fileID: 406342}
-  - {fileID: 412464}
   - {fileID: 468988}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -422,7 +419,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 412464}
+  - {fileID: 406342}
+  - {fileID: 423654}
   m_Father: {fileID: 434638}
   m_RootOrder: 1
 --- !u!4 &468530
@@ -458,7 +458,7 @@ Transform:
   - {fileID: 438648}
   - {fileID: 477798}
   m_Father: {fileID: 434638}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!4 &470456
 Transform:
   m_ObjectHideFlags: 1
@@ -582,6 +582,7 @@ MonoBehaviour:
   startingPoint: {fileID: 410488}
   projectileVelocity: 7.5
   shootingSound: {fileID: 8300000, guid: befc4a914e8454c4a9e9a9972d207a21, type: 3}
+  armor: {fileID: 188978}
 --- !u!212 &21213416
 SpriteRenderer:
   m_ObjectHideFlags: 1

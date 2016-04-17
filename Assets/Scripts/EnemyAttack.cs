@@ -6,12 +6,11 @@ public class EnemyAttack : MonoBehaviour {
 	private event Attack OnShoot;
 	
 	[SerializeField] private GameObject projectilePrefab;
-
 	[SerializeField] private Transform startingPoint;
-	
 	[SerializeField] private float projectileVelocity;
-	
 	[SerializeField] private AudioClip shootingSound;
+	[SerializeField] private GameObject armor;
+	
 	
 	private float _coolDown;
 	public float coolDown {
@@ -68,5 +67,9 @@ public class EnemyAttack : MonoBehaviour {
 	
 	private void ResetCounter() {
 		counter = Time.time + Random.Range(0, _coolDown);
+	}
+	
+	public void BreakArmor() {
+		armor.SetActive(false);
 	}
 }
