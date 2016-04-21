@@ -390,6 +390,10 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
       value: -0.04074298
       objectReference: {fileID: 0}
+    - target: {fileID: 11477574, guid: c0e9692b82eb142aa8358486814b90e8, type: 2}
+      propertyPath: fireButtonName
+      value: Fire1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0e9692b82eb142aa8358486814b90e8, type: 2}
   m_IsPrefabParent: 0
