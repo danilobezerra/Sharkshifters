@@ -1,5 +1,5 @@
 # Sharkshifters
-Ludum Dare 35 Entry - Theme: Shapeshift
+Ludum Dare 35 Compo Entry - Theme: Shapeshift
 
 Oh no! The sharks shifted their forms... Now they are Flying Cyborg Sharks with LASERS!! 
 We have to catch our pirate ship with built-in cannon and MAKE they shift their form to normal sharks again! (Watching out the innocent seagulls of course...) 
