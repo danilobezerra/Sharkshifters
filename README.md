@@ -11,7 +11,7 @@ We have to catch our pirate ship with built-in cannon and MAKE they shift their 
 
 ## Instructions: 
 - Press *Left Arrow* and *Right Arrow* to move the ship
-- Press *Shift* Key to shoot the cannon
+- Press *Space Bar* to shoot the cannon
 
 ## Tools: 
 - [Unity 5](http://unity3d.com/)
